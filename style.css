@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chamado-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+
+    input{
+        width: 400px;
+        height: 25px;
+        border-radius: 50px;
+        border: 2px solid black;
+        padding: 2%;
+    }
+
+    button{
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: rgb(76, 177, 255);
+        border: 2px solid black;
+        cursor: pointer;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.cardCriticaVermelho{
+    background-color: rgb(255, 133, 133);
+
+    h2{
+        color: rgb(143, 0, 0);
+    }
+}
+
+.cardAltaLaranja{
+    background-color: rgb(255, 204, 109);
+
+    h2{
+        color: rgb(145, 104, 29);
+    }
+}
+
+.cardMediaAmarela{
+    background-color: rgb(255, 255, 140);
+
+    h2{
+        color: rgb(120, 120, 24);
+    }
+}
+
+.cardBaixaVerde{
+    background-color: rgb(154, 255, 154);
+
+    h2{
+        color: rgb(0, 116, 0);
+    }
+}

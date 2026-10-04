@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <script src="./chamados.js"></script>
+</head>
+
+<body>
+    <header>
+
+
+            <nav>
+                <h1>Chamados da empresa</h1>
+                <input type="text" id="pesquisaChamadoPorNome" placeholder="Pesquise pelo nome:">
+                <button id="botaoNome">Pesquisar</button>
+            </nav>
+
+            <form>
+                <h2>Prioridade e Status</h2>
+                <select name="" id="prioridadeFiltro">
+                    <option value="Baixa" style="background-color: rgb(99, 255, 99);">Baixa</option>
+                    <option value="Média" style="background-color: rgb(255, 255, 87);">Média</option>
+                    <option value="Alta" style="background-color: rgb(253, 195, 86);">Alta</option>
+                    <option value="Crítica" style="background-color: rgb(255, 115, 115);">Crítica</option>
+                </select>
+
+                <select name="" id="statusFiltro">
+                    <option value="Em progresso">Em progresso</option>
+                    <option value="Aberto">Aberto</option>
+                    <option value="Fechado">Fechado</option>
+                </select>
+
+                <button id="todos">Todos</button>
+            </form>
+
+
+    </header>
+
+    <main>
+        <div class="chamado-container" id="chamado-container"></div>
+    </main>
+</body>
+
+</html>
